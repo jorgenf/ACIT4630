@@ -58,8 +58,8 @@ def gradient_descent(lr, epochs):
             W[w].assign(W[w]-cost)
 
 
-create_dataset(file_name="breast_cancer_dataset.csv", train_p=0.7, y_index=1, x_interval=(2, 32))
-#create_dataset(file_name="new_dataset.csv", train_p=0.7, y_index=0, x_interval=(1, 54))
+create_dataset(file_name="../Data/breast_cancer_dataset.csv", train_p=0.7, y_index=1, x_interval=(2, 32))
+#create_dataset(file_name="../Data/new_dataset.csv", train_p=0.7, y_index=0, x_interval=(1, 54))
 gradient_descent(lr=0.01, epochs=1000)
 Y_hat = hypothesis(test_X)
 right = 0
