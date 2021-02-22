@@ -1,6 +1,6 @@
-import MachineLearningMethods.LinearRegression as LR
+import MachineLearningMethods.linear_regression as LR
 import MachineLearningMethods.Data as Data
-import MachineLearningMethods.LogisticRegression as logreg
+import MachineLearningMethods.logistic_regression as logreg
 
 training_data, testing_data = Data.import_data("breast_cancer_dataset.csv", 0.8)
 training_data_gt = training_data.iloc[:, 1:2]
